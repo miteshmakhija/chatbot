@@ -8,7 +8,7 @@ pip install rasa
 
 Clone this repo-
 ```
-git clone https://github.com/codingnest/chatbox
+git clone https://github.com/miteshmakhija/chatbox
 cd chatbox
 ```
 
