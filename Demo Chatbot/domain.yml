@@ -1,0 +1,83 @@
+intents:
+- greet
+- pandas
+- numpy
+- matplotlib
+- maths
+- bye
+- fine_ask
+- fine_normal
+- affirm
+
+slots:
+  Pandas:
+    type: categorical
+    values:
+        - dataframe
+        - pandas
+        - series
+        - data preprocessing
+        - CRUD
+        
+  Numpy:
+    type: categorical
+    values:
+        - numpy
+        - linear algebra
+        - arrays
+        - multi arrays
+        - 2d arrays
+        
+  Matplotlib:
+    type: categorical
+    values:
+        - matplotlib
+        - visualization
+        - plots
+        - subplots
+        - seaborn
+        
+  Maths:
+    type: categorical
+    values:
+        - maths
+        - probability
+        - matrics
+        - statistics
+        - calculus
+          
+entities:
+
+- Pandas
+- Numpy
+- Matplotlib
+- Maths
+
+
+actions:
+- utter_greet
+- utter_action_pandas
+- utter_action_numpy
+- utter_action_matplotlib
+- utter_action_maths
+- utter_affirm
+- utter_help
+- __main__.ApiAction
+
+templates:
+
+  utter_greet:
+  - text: "Hello Welcome to CodingNest, how are you ?"
+  utter_help:
+    - text: "Great. How can I help you?"
+    - text: "Great. Tell me How can I help you?"
+  utter_action_pandas:
+  - text: "https://www.geeksforgeeks.org/python-pandas-dataframe/"
+  utter_action_numpy:
+  - text: "https://www.geeksforgeeks.org/numpy-in-python-set-1-introduction/"
+  utter_action_matplotlib:
+  - text: "https://matplotlib.org/"
+  utter_action_maths:
+  - text: "https://www.coursera.org/learn/datasciencemathskills"
+  utter_affirm:
+  - text: "You're welcome"
